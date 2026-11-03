@@ -42,10 +42,10 @@ jobs:
           flutter doctor -v || true
 
       - name: Build release APK (adaptive)
-        run: bash .github/scripts/build_apk.sh
+        run: bash ci/scripts/build_apk.sh
 
       - name: Publish APK + logs to ci-artifacts branch
         if: always()
         env:
           CI_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash .github/scripts/publish.sh
+        run: bash ci/scripts/publish.sh
