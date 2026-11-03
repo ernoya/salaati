@@ -1,0 +1,6 @@
+{
+  "name": "تقييم ومعاينة تطبيق صلاتي — Prayer Now Flutter Review",
+  "description": "تقرير فني معماري وتقييم شامل لتطبيق صلاتي (Prayer Now Flutter) مع محاكي تفاعلي حي لمواقيت الصلاة، الأذان، القرآن، الأذكار، والقبلة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

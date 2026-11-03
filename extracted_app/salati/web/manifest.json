@@ -1,0 +1,19 @@
+{
+  "name": "مواقيت الصلاة والأذان — Prayer Now",
+  "short_name": "مواقيت الصلاة",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#07131A",
+  "theme_color": "#07131A",
+  "description": "مواقيت الصلاة والأذان، القبلة، القرآن الكريم كاملًا، الأذكار، أسماء الله الحسنى، السبحة والتقويم الهجري — يعمل بدون إنترنت.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/Icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/Icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "icons/Icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
