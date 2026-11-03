@@ -13,12 +13,17 @@ import sys
 import textwrap
 
 PROFILES = {
-    "1": dict(compile_sdk="34", min_sdk="23", target_sdk="34",
-              agp="8.1.0", gradle="8.3", kotlin="1.9.24", desugar="2.0.9"),
-    "2": dict(compile_sdk="35", min_sdk="23", target_sdk="35",
-              agp="8.6.1", gradle="8.9", kotlin="1.9.24", desugar="2.1.4"),
-    "3": dict(compile_sdk="35", min_sdk="24", target_sdk="35",
-              agp="8.7.3", gradle="8.10.2", kotlin="2.0.21", desugar="2.1.4"),
+    # Flutter 3.29.x — closest to the project's Dart 3.5 target, and the first
+    # generation that exposes `flutter.compileSdkVersion` to plugin projects
+    # (required by geolocator_android 4.6.2).
+    "1": dict(compile_sdk="35", min_sdk="23", target_sdk="35",
+              agp="8.7.3", gradle="8.12", kotlin="2.1.0", desugar="2.1.4"),
+    # Flutter 3.32.x — newer Dart, compileSdk 36.
+    "2": dict(compile_sdk="36", min_sdk="24", target_sdk="36",
+              agp="8.7.3", gradle="8.12", kotlin="2.1.0", desugar="2.1.4"),
+    # Latest stable — toolchain one notch newer.
+    "3": dict(compile_sdk="36", min_sdk="24", target_sdk="36",
+              agp="8.9.1", gradle="8.13", kotlin="2.1.0", desugar="2.1.4"),
 }
 
 BUILD_GRADLE = """\

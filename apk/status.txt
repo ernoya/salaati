@@ -1,0 +1,13 @@
+BUILD FAILED (last exit 1)
+commit: 07e8b904d3372b83a7d8b2ff26c839a6a6a968ef
+
+--- extracted errors ---
+FAILURE: Build completed with 2 failures.
+* What went wrong:
+* What went wrong:
+FAILURE: Build completed with 2 failures.
+* What went wrong:
+* What went wrong:
+FAILURE: Build completed with 2 failures.
+* What went wrong:
+* What went wrong:
