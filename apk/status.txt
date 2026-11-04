@@ -1,13 +1,10 @@
 BUILD FAILED (last exit 1)
-commit: 07e8b904d3372b83a7d8b2ff26c839a6a6a968ef
+commit: 3ccd42adf5e001b7752688f2d6165298e3db155a
 
 --- extracted errors ---
-FAILURE: Build completed with 2 failures.
+   > Error: Your project's Gradle version (8.13.0) is lower than Flutter's minimum supported version of 8.14.0. Please upgrade your Gradle version. 
 * What went wrong:
-* What went wrong:
-FAILURE: Build completed with 2 failures.
-* What went wrong:
-* What went wrong:
-FAILURE: Build completed with 2 failures.
-* What went wrong:
-* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+FAILURE: Build failed with an exception.
+Target kernel_snapshot_program failed: Exception
+lib/screens/settings_screen.dart:328:54: Error: Member not found: 'textMain'.

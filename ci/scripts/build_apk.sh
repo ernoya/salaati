@@ -138,6 +138,10 @@ build_once() {
     return 10
   fi
 
+  # Full static analysis first: gives every Dart error in one shot instead of
+  # only the first one Gradle happens to hit.
+  ( cd "$APP_DIR" && flutter analyze ) > "$OUT/analyze-$profile.log" 2>&1 || true
+
   ( cd "$APP_DIR" && flutter build apk --release ) > "$OUT/build-$profile.log" 2>&1
   local rc=$?
   log_tail "$OUT/build-$profile.log"
@@ -199,6 +203,9 @@ collect_debug_info
   echo "--- extracted errors ---"
   grep -h -E "FAILURE:|What went wrong|^e: |error:|Error:|Execution failed|requires .* (compile)?Sdk|Namespace not specified|Unsupported|Could not|Exception|not found" \
     "$OUT"/build-*.log 2>/dev/null | sort -u | tail -n 80
+  echo
+  echo "--- analyzer errors (profile 1) ---"
+  grep -h -E "error •" "$OUT"/analyze-1.log 2>/dev/null | sed 's/^ *//' | head -n 60
 } > "$OUT/status.txt"
 cat "$OUT/status.txt"
 exit 1

@@ -23,7 +23,7 @@ PROFILES = {
               agp="8.7.3", gradle="8.12", kotlin="2.1.0", desugar="2.1.4"),
     # Latest stable — toolchain one notch newer.
     "3": dict(compile_sdk="36", min_sdk="24", target_sdk="36",
-              agp="8.9.1", gradle="8.13", kotlin="2.1.0", desugar="2.1.4"),
+              agp="8.9.1", gradle="8.14", kotlin="2.1.0", desugar="2.1.4"),
 }
 
 BUILD_GRADLE = """\

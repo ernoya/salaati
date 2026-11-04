@@ -12,7 +12,7 @@ mkdir -p "$APK_DIR"
 say() { echo "[$(date -u +%H:%M:%S)] $*" | tee -a "$LOG"; }
 
 for i in $(seq 1 80); do
-  if git fetch -q origin ci-artifacts:refs/remotes/origin/ci-artifacts 2>/dev/null; then
+  if git fetch -q origin +refs/heads/ci-artifacts:refs/remotes/origin/ci-artifacts 2>/dev/null; then
     status=$(git show origin/ci-artifacts:status.txt 2>/dev/null | head -n 1)
     build_commit=$(git show origin/ci-artifacts:status.txt 2>/dev/null | sed -n 's/^commit: //p' | head -n 1)
     head_commit=$(git rev-parse "origin/$BRANCH" 2>/dev/null)
