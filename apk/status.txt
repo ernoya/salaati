@@ -1,7 +1,0 @@
-BUILD SUCCESS
-profile: 1
-flutter: Flutter 3.29.3 • channel stable • https://github.com/flutter/flutter.git
-commit: eaecce848383350b5defc6baffa9f31d34cd5b17
-date: 2026-11-04T00:41:31Z
-size: 59M
-sha256: 93df3185228f3bc076019b534e847399ed3df44ad7d48587d5e0bb6ac15d55f4
