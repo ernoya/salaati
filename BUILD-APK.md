@@ -3,12 +3,12 @@
 المشروع الأصلي تطبيق **Flutter** في `extracted_app/salati/`،
 وواجهة الويب في جذر المستودع (`src/`) هي تقرير/محاكاة فقط.
 
-آخر بناء ناجح: **`salati-release.apk`** (universal — arm64-v8a + armeabi-v7a + x86_64)
+آخر بناء ناجح: **`apk/salati-release.apk`** (universal — arm64-v8a + armeabi-v7a + x86 + x86_64)
 
 | البند | القيمة |
 |---|---|
-| الحجم | ‎61.8 MB (61,845,197 بايت) |
-| SHA-256 | `93df3185228f3bc076019b534e847399ed3df44ad7d48587d5e0bb6ac15d55f4` |
+| الحجم | ‎61.8 MB (‏59 MB عند النشر على فرع `ci-artifacts`) |
+| SHA-256 | يُقرأ من `apk/status.txt` أو `origin/ci-artifacts:status.txt` — يتغيّر كل بناء لأن مفتاح debug يُعاد توليده على المُشغّل |
 | Flutter | 3.29.3 (stable) |
 | Android | compileSdk 35 · minSdk 23 · targetSdk 35 · AGP 8.7.3 · Gradle 8.12 · Kotlin 2.1.0 |
 | الحزمة | `com.salati.app` — الإصدار `1.0.0 (1)` |
