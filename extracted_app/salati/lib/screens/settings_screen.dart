@@ -325,7 +325,7 @@ class SettingsScreen extends StatelessWidget {
                                       '4. Allow "Alarms & Reminders" permission.',
                                 style: const TextStyle(
                                     fontSize: 12.5,
-                                    color: AppColors.textMain,
+                                    color: AppColors.textPrimary,
                                     height: 1.6,
                                     fontFamily: 'Cairo'),
                               ),
