@@ -1,10 +1,7 @@
-BUILD FAILED (last exit 1)
-commit: 3ccd42adf5e001b7752688f2d6165298e3db155a
-
---- extracted errors ---
-   > Error: Your project's Gradle version (8.13.0) is lower than Flutter's minimum supported version of 8.14.0. Please upgrade your Gradle version. 
-* What went wrong:
-Execution failed for task ':app:compileFlutterBuildRelease'.
-FAILURE: Build failed with an exception.
-Target kernel_snapshot_program failed: Exception
-lib/screens/settings_screen.dart:328:54: Error: Member not found: 'textMain'.
+BUILD SUCCESS
+profile: 1
+flutter: Flutter 3.29.3 • channel stable • https://github.com/flutter/flutter.git
+commit: eaecce848383350b5defc6baffa9f31d34cd5b17
+date: 2026-11-04T00:41:31Z
+size: 59M
+sha256: 93df3185228f3bc076019b534e847399ed3df44ad7d48587d5e0bb6ac15d55f4
