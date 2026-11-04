@@ -62,12 +62,12 @@ ensure_flutter() {  # $1 = version -> prints bin dir
   [ -n "$v" ] || return 1
   d="$SDK_ROOT/$v"
   if [ ! -x "$d/bin/flutter" ]; then
-    echo "downloading Flutter $v ..."
+    echo "downloading Flutter $v ..." >&2
     rm -rf "$d" "$SDK_ROOT/unpack"
     mkdir -p "$SDK_ROOT/unpack"
     if ! curl -fsSL --retry 3 -o /tmp/flutter.tar.xz \
         "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${v}-stable.tar.xz"; then
-      echo "download failed for Flutter $v"
+      echo "download failed for Flutter $v" >&2
       return 1
     fi
     tar -xJf /tmp/flutter.tar.xz -C "$SDK_ROOT/unpack" || return 1
@@ -113,6 +113,10 @@ build_once() {
   echo "=================================================="
 
   bindir=$(ensure_flutter "$v") || return 12
+  if [ ! -x "$bindir/flutter" ]; then
+    echo "invalid flutter bin dir: '$bindir'" >&2
+    return 12
+  fi
   export PATH="$bindir:$PATH"
   export FLUTTER_ROOT="$(dirname "$bindir")"
   echo "using flutter: $(command -v flutter)"
