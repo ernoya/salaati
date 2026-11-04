@@ -1,0 +1,42 @@
+[✓] Flutter (Channel stable, 3.29.3, on Ubuntu 24.04.5 LTS 7.0.0-1017-azure, locale C.UTF-8) [103ms]
+    • Flutter version 3.29.3 on channel stable at /home/runner/flutter-sdks/3.29.3
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision ea121f8859 (1 year, 7 months ago), 2025-04-11 19:10:07 +0000
+    • Engine revision cf56914b32
+    • Dart version 3.7.2
+    • DevTools version 2.42.3
+
+[!] Android toolchain - develop for Android devices (Android SDK version 37.0.0) [3.5s]
+    • Android SDK at /usr/local/lib/android/sdk
+    • Platform android-37.2-beta1, build-tools 37.0.0
+    • ANDROID_HOME = /usr/local/lib/android/sdk
+    • ANDROID_SDK_ROOT = /usr/local/lib/android/sdk
+    • Java binary at: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64/bin/java
+      This JDK is specified by the JAVA_HOME environment variable.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)
+    ! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses
+
+[✓] Chrome - develop for the web [24ms]
+    • Chrome at google-chrome
+
+[✗] Linux toolchain - develop for Linux desktop [669ms]
+    • Ubuntu clang version 18.1.3 (1ubuntu1)
+    • cmake version 3.31.6
+    • ninja version 1.13.2
+    • pkg-config version 1.8.1
+    ✗ GTK 3.0 development libraries are required for Linux development.
+      They are likely available from your distribution (e.g.: apt install libgtk-3-dev)
+
+[!] Android Studio (not installed) [19ms]
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/to/linux-android-setup for detailed instructions).
+
+[✓] Connected device (2 available) [735ms]
+    • Linux (desktop) • linux  • linux-x64      • Ubuntu 24.04.5 LTS 7.0.0-1017-azure
+    • Chrome (web)    • chrome • web-javascript • Google Chrome 156.0.8078.47
+
+[✓] Network resources [244ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 3 categories.

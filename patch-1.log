@@ -1,0 +1,6 @@
+applied profile 1:
+  compileSdk=35 minSdk=23 targetSdk=35
+  AGP=8.7.3 Gradle=8.12 Kotlin=2.1.0
+  desugar_jdk_libs=2.1.4
+flutter version: Flutter 3.29.3 • channel stable • https://github.com/flutter/flutter.git
+dart version:    Dart SDK version: 3.7.2 (stable) (Tue Mar 11 04:27:50 2025 -0700) on "linux_x64"
